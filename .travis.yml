@@ -37,6 +37,8 @@ jobs:
       # Travis CI already has qt 5.13 installed
       - brew reinstall qt
     - os: windows
+      before_install:
+      - curl -vLO http://download.qt.io/official_releases/online_installers/qt-unified-windows-x86-online.exe
 
 script:
   # Check qmake --version
