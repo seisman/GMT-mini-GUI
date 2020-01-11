@@ -13,6 +13,7 @@ macos_package: build
 	zip -r GMT-GUI.app.zip GMT-GUI.app
 
 # Packaging for Linux
+# linuxdeployqt is available from https://github.com/probonopd/linuxdeployqt
 linux_package: build
 	mkdir -p package; \
 	mv GMT-GUI package/; \
